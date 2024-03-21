@@ -9,7 +9,7 @@
 
 <div class = "card">
     <div class = "search">
-        <input type = "text" placeholder="Enter City Name" spellcheck = "false">
+        <input type="text" name="cityName" placeholder="Enter City Name" spellcheck="false">
     <button> 
         <img src="images/search.png">
     </button>
@@ -40,7 +40,7 @@
 <script>
 
     const apiKey =  "e551a2b43266916930c757a82d308aca"
-    const apiURL = "https://api.openweathermap.org/data/2.5/weather?units=metric"
+    const apiURL = `https://api.openweathermap.org/data/2.5/weather?units=metric&appid=${apiKey}`;
 
     async function checkWeather() {
 
