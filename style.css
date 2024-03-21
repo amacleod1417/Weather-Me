@@ -8,27 +8,50 @@
 }
 
 body{
-    background: #222;
+    background: #FFFFFF;
 }
 
-.card{
+
+.logo {
+    width: 30px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+.title {
+  
+    font-size: 30px; 
+    color: #f879c8; 
+}
+
+.header {
+    margin-left: 20px;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px;
+}
+
+.card {
     width: 90%;
     max-width: 470px;
     background: linear-gradient(135deg, #00feba, #5b548a);
     color: #fff;
-    margin: 100px auto 0;
+    margin: 20px auto 0; 
+    margin-top: 5px;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
 }
 
-.search{
+.search {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; 
+    margin-top: 5px; 
 }
-
 .search input{
     border: 0;
     outline: 0;
@@ -95,4 +118,15 @@ body{
 .humidity, .wind {
     font-size: 28px;
     margin-top: -6px;
+}
+
+.weather {
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 20px;
+    display: none;
 }
